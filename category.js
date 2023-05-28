@@ -1,7 +1,5 @@
-let id = [1,2,3,4,5]
-let name = [
-    "Japanese Food", "Chinese Food", "Burmese Food", "Thai Food", "Italian Food"
-];
+let id = [1,2,3,4];
+let name = ["Japanese Food", "Thai Food", "Italian Food", "Korean Food"];
 class Category {
     id;
     name;
@@ -11,12 +9,8 @@ class Category {
     }
 }
 let categories = [];
-for (let index = 0; index < name.length; index++) {
-    let data = new Category (id[index], name[index]);
-    categories.push(data);
+for (let index = 0; index < id.length; index++) {
+    let category = new Category(id[index], name[index]);
+    categories.push(category);
 }
 module.exports = categories;
-
-
-
-
